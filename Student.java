@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Student {
+public class Student extends Person {
     private String firstName;
     private String lastName;
     private Date DOB;
@@ -8,9 +8,8 @@ public class Student {
     private int YOG;
 
     public Student(String firstName, String lastName, Date DOB, double GPA, int YOG) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.DOB = DOB;
+        super(firstName, lastName, DOB);
+
         this.GPA = GPA;
         this.YOG = YOG;
     }
@@ -29,9 +28,5 @@ public class Student {
 
     public int getYOG() {
         return YOG;
-    }
-    
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
     }
 }

@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Teacher {
+public class Teacher extends Person {
     private String firstName;
     private String lastName;
     private Date DOB;
@@ -8,11 +8,16 @@ public class Teacher {
     private double salary;
 
     public Teacher(String firstName, String lastName, Date DOB, Date hireDate, double salary) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.DOB = DOB;
+        super(firstName, lastName, DOB);
+        
         this.hireDate = hireDate;
-        this.salary = salary;
+        if (salary > 0) {
+          this.salary = salary;
+        }
+
+        else {
+          this.salary = 0;
+        }
     }
 
     public String getName() {
@@ -29,9 +34,5 @@ public class Teacher {
 
     public double getSalary() {
         return salary;
-    }
-    
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
     }
 }
