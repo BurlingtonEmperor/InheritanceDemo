@@ -5,5 +5,6 @@ public class Main {
     Student s = new Student("Emma", "Jones", new Date(), 3.9, 2024);
 
     System.out.println(s.getName());
+    System.out.println(s.getDOB());
   }
 }
