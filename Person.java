@@ -26,4 +26,12 @@ public class Person {
     public String getHairColor () {
       return hairColor;
     }
+
+    public String getName() {
+        return firstName + " " + lastName;
+    }
+
+    public Date getDOB() {
+        return DOB;
+    }
 }
