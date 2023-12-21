@@ -7,8 +7,8 @@ public class Teacher extends Person {
     private Date hireDate;
     private double salary;
 
-    public Teacher(String firstName, String lastName, Date DOB, Date hireDate, double salary) {
-        super(firstName, lastName, DOB);
+    public Teacher(String firstName, String lastName, Date DOB, Date hireDate, double salary, String hairColor) {
+        super(firstName, lastName, DOB, hairColor);
         
         this.hireDate = hireDate;
         if (salary > 0) {

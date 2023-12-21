@@ -4,11 +4,13 @@ public class Person {
     private String firstName;
     private String lastName;
     private Date DOB;
+    private String hairColor;
 
-    public Person (String firstName, String lastName, Date DOB) {
+    public Person (String firstName, String lastName, Date DOB, String hairColor) {
       setFirstName(firstName);
       this.lastName = lastName;
       this.DOB = DOB;
+      this.hairColor = hairColor;
     }
 
     public void setFirstName(String firstName) {
@@ -19,5 +21,9 @@ public class Person {
       else {
         this.firstName = firstName;
       }
+    }
+
+    public String getHairColor () {
+      return hairColor;
     }
 }
