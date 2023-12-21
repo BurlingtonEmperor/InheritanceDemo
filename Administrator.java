@@ -9,4 +9,8 @@ public class Administrator extends Person {
     
     this.officeNumber = officeNumber;
   }
+
+  public int getOfficeNumber () {
+    return officeNumber;
+  }
 }
