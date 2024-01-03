@@ -9,9 +9,9 @@ public class Main {
 
     ArrayList<Person> people = new ArrayList<>();
 
-    people.add(s);
-    people.add(p);
-    people.add(a);
+    people.add(s); // This is an example of polymorphism
+    people.add(p); // A Student is being stored as a Person
+    people.add(a); 
 
     for (Person x : people) {
       System.out.println(x.getName());
