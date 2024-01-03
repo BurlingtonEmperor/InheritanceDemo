@@ -15,10 +15,10 @@ public class Main {
 
     for (Person x : people) {
       System.out.println(x.getName());
+      System.out.println(((Student)(x)).getGPA());
     }
 
     // System.out.println((Student)(people.get(0)).getGPA());
-    System.out.println(((Student)(people.get(0))).getGPA());
 
     // System.out.println(s.getName());
     // System.out.println(s.getDOB());
